@@ -48,14 +48,14 @@ class QuestionController extends GetxController
   }
 
   void checkAns(Quiz quiz, String ans) {
-    print("Ans:" + ans);
-    print("Right one: " + quiz.correctAnswer);
+    // print("Ans:" + ans);
+    // print("Right one: " + quiz.correctAnswer);
     if (quiz.correctAnswer == ans) {
       _numOfCorrectAns.value = _numOfCorrectAns.value + 1;
-      print("Number of correct ans " + _numOfCorrectAns.toString());
-      print("Right");
+      // print("Number of correct ans " + _numOfCorrectAns.toString());
+      // print("Right");
     } else {
-      print("Wrong");
+      // print("Wrong");
     }
     listAnswerQuestion.clear();
   }
